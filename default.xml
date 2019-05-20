@@ -54,4 +54,8 @@
 
   <project path="prebuilts/prebuiltapks" name="lineageos4microg/android_prebuilts_prebuiltapks" remote="github" revision="master" />
 
+  <!-- TWRP -->
+  <project path="bootable/recovery-twrp" name="omnirom/android_bootable_recovery" remote="github" revision="android-8.1" />
+  <project path="external/busybox" name="omnirom/android_external_busybox" remote="github" revision="android-8.1" />
+
 </manifest>
