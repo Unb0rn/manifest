@@ -23,7 +23,6 @@
   </project>
 
   <project path="external/lxc" name="platform_external_lxc" remote="maruos" />
-  <!--  <project path="frameworks/base" name="android_platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="maruos" /> -->
   <project path="frameworks/base" name="android_platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="unb0rn" revision="maru-0.6-microg"/>
   <project path="frameworks/native" name="android_platform_frameworks_native" groups="pdk" remote="maruos" />
   <project path="packages/apps/Settings" name="android_platform_packages_apps_Settings" remote="maruos" />
@@ -48,9 +47,10 @@
 
   <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" groups="device,star2lte,pdk" />
   <!-- <project path="kernel/samsung/universal9810" name="android_kernel_samsung_universal9810" groups="device,star2lte" remote="maruos" clone-depth="100" /> -->
-  <project path="kernel/samsung/universal9810" name="android_kernel_samsung_universal9810_whitewolf" groups="device,star2lte" remote="unb0rn" revision="maru-0.6" clone-depth="100" />
-  <project path="device/samsung/universal9810-common" name="android_device_samsung_universal9810-common" groups="device,star2lte,pdk" remote="maruos" />
-  <project path="device/samsung/star2lte" name="android_device_samsung_star2lte" groups="device,star2lte,pdk" remote="maruos" />
+  <project path="kernel/samsung/universal9810" name="android_kernel_samsung_star_endurance" groups="device,star2lte" remote="unb0rn" revision="Endurance-Kernel-AOSP" clone-depth="100" />
+  <!-- <project path="device/samsung/universal9810-common" name="android_device_samsung_universal9810-common" groups="device,star2lte,pdk" remote="maruos" /> -->
+  <project path=path="device/samsung/star-common" name="android_device_samsung_universal9810-common" groups="device,star2lte,pdk" remote="unb0rn" revision="maru-0.6-starcommon" />
+  <project path="device/samsung/star2lte" name="android_device_samsung_star2lte" groups="device,star2lte,pdk" remote="unb0rn" revision="maru-0.6-starcommon" />
 
   <project path="prebuilts/prebuiltapks" name="lineageos4microg/android_prebuilts_prebuiltapks" remote="github" revision="master" />
 
